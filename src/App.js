@@ -7,6 +7,7 @@ import ProductValues from './onepirate/modules/views/ProductValues';
 import ProductHowItWorks from './onepirate/modules/views/ProductHowItWorks';
 import ProductCTA from './onepirate/modules/views/ProductCTA';
 import AppAppBar from './onepirate/modules/views/AppAppBar';
+import withRoot from './onepirate/modules/withRoot';
 
 function App() {
   const value = 'World';
@@ -26,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRoot(App);
