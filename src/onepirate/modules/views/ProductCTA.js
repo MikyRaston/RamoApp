@@ -18,6 +18,18 @@ function ProductCTA() {
   const handleClose = () => {
     setOpen(false);
   };
+  
+  const iconStyle = {
+    width: 48,
+    height: 48,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    mr: 1,
+    '&:hover': {
+      bgcolor: 'warning.dark',
+    },
+  };
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
@@ -28,31 +40,44 @@ function ProductCTA() {
               display: 'flex',
               justifyContent: 'center',
               bgcolor: 'warning.main',
-              py: 8,
+              py: 6,
               px: 3,
             }}
           >
-            <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
+            <Box sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Contacto
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                Nezahualcoyotl, México.
               </Typography>
-              <TextField
-                noBorder
-                placeholder="Your email"
-                variant="standard"
-                sx={{ width: '100%', mt: 3, mb: 2 }}
-              />
-              <Button
-                type="submit"
-                color="primary"
-                variant="contained"
-                sx={{ width: '100%' }}
-              >
-                Keep me updated
-              </Button>
+              <Typography variant="h5" gutterBottom>
+                56 4572 9778.
+              </Typography>
+              <Typography variant="h5">
+                estelalopez46@hotmail.com
+              </Typography>
+
+
+              <Grid
+              container
+              direction="column"
+              spacing={2}
+              sx={{ justifyContent: 'flex-end', height: 80 }}
+            >
+              <Grid item sx={{ display: 'flex' }}>
+                <Box component="a" href="https://www.facebook.com/" sx={iconStyle}>
+                  <img
+                    src="https://ramostorage.blob.core.windows.net/ramo/facebook.png?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D"
+                    alt="Facebook"
+                  />
+                </Box>
+                <Box component="a" href="https://www.instagram.com/" sx={iconStyle}>
+                  <img src="https://ramostorage.blob.core.windows.net/ramo/instagram.png?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D" alt="instagram" />
+                </Box>
+              </Grid>
+            </Grid>
+
             </Box>
           </Box>
         </Grid>
@@ -75,7 +100,7 @@ function ProductCTA() {
           />
           <Box
             component="img"
-            src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750"
+            src="https://ramostorage.blob.core.windows.net/ramo/contacto.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D"
             alt="call to action"
             sx={{
               position: 'absolute',

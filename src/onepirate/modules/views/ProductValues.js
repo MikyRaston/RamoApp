@@ -25,24 +25,25 @@ function ProductValues() {
           alt="curvy lines"
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
         />
+
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
+                component="i"
                 alt="suitcase"
-                sx={{ height: 55 }}
+                className="fi fi-rs-thought-bubble"
+                sx={{ height: 55, fontSize: "3em" }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                Análisis
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
+                  'Cada proyecto requiere una análisis personalizado'
                 }
                 {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                  ', dependiendo de las necesidades particulares.'
                 }
               </Typography>
             </Box>
@@ -50,38 +51,39 @@ function ProductValues() {
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
+                component="i"
                 alt="graph"
-                sx={{ height: 55 }}
+                className="fi fi-rs-calculator-money"
+                sx={{ height: 55, fontSize: "3em" }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+                Cotización
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  'Precios variables dependiendo del servicio ofrecido'
                 }
-                {'your Sundays will not be alike.'}
+                {' y el esfuerzo aplicado al proyecto.'}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
+                component="i"
                 alt="clock"
-                sx={{ height: 55 }}
+                className="fi fi-rr-test"
+                sx={{ height: 55, fontSize: "3em" }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+                Solución
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Soluciones garantizadas. '}
+                {'Contamos con una aplia experiencia en el ramo contable.'}
               </Typography>
             </Box>
+
           </Grid>
         </Grid>
       </Container>

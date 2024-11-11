@@ -20,17 +20,17 @@ function ProductSmokingHero() {
         }}
       >
         <Typography variant="h4" component="span">
-          Got any questions? Need help?
+          ¿Necesitas ayuda?
         </Typography>
       </Button>
       <Typography variant="subtitle1" sx={{ my: 3 }}>
-        We are here to help. Get in touch!
+        Estamos aquí para ayudarte
       </Typography>
       <Box
-        component="img"
-        src="/static/themes/onepirate/productBuoy.svg"
+        component="i"
         alt="buoy"
-        sx={{ width: 60 }}
+        className="fi fi-rr-calculator-money"
+        sx={{ width: 60, fontSize: "4em" }}
       />
     </Container>
   );
