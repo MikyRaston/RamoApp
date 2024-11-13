@@ -58,31 +58,37 @@ const images = [
     url: 'https://ramostorage.blob.core.windows.net/ramo/cafe.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'REPSE',
     width: '40%',
+    href: 'https://repse.stps.gob.mx/',
   },
   {
     url: 'https://ramostorage.blob.core.windows.net/ramo/construccion.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'SIROC',
     width: '20%',
+    href: 'https://www.imss.gob.mx/siroc',
   },
   {
     url: 'https://ramostorage.blob.core.windows.net/ramo/nomina.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'Nomina',
     width: '40%',
+    href: 'https://www.diputados.gob.mx/LeyesBiblio/ref/lft.htm',
   },
   {
     url: 'https://ramostorage.blob.core.windows.net/ramo/impuestos.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'Impuestos',
     width: '38%',
+    href: 'https://www.sat.gob.mx/',
   },
   {
     url: 'https://ramostorage.blob.core.windows.net/ramo/imss.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'IMSS',
     width: '38%',
+    href: 'https://www.imss.gob.mx/',
   },
   {
     url: 'https://ramostorage.blob.core.windows.net/ramo/invonavit.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D',
     title: 'Infonavit',
     width: '24%',
+    href: 'https://portalmx.infonavit.org.mx/',
   },
 ];
 
@@ -113,7 +119,7 @@ export default function ProductCategories() {
               }}
             />
             <ImageBackdrop className="imageBackdrop" />
-            <Box
+            <Box component="a" href={image.href} target="_blank" rel="noopener noreferrer"
               sx={{
                 position: 'absolute',
                 left: 0,

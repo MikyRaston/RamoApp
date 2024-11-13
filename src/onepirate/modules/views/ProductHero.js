@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import { HashLink } from 'react-router-hash-link';
 
 const backgroundImage =
   'https://ramostorage.blob.core.windows.net/ramo/business.jpg?sp=r&st=2024-11-11T17:08:45Z&se=2030-11-12T01:08:45Z&spr=https&sv=2022-11-02&sr=c&sig=FLpqk0oR%2FsqsUAAflqrXn%2FsvAGQsnHoUB5tge%2BehDI4%3D';
@@ -32,16 +33,17 @@ export default function ProductHero() {
       >
         Servicios contables personalizados.
       </Typography>
+      <HashLink to="#contacto">
       <Button
         color="secondary"
         variant="contained"
         size="large"
         component="a"
-        href="/"
         sx={{ minWidth: 200 }}
       >
         Contactanos
       </Button>
+      </HashLink>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
         Descubre nuestros servicios
       </Typography>
